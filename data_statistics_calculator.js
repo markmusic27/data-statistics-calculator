@@ -2,7 +2,7 @@ function statisticCall(array, solveFor) {
   // Declaring Variables
 
   let sumOfArray = 0;
-  var arrayInOrder = array.sort();
+  let arrayInOrder = array.sort();
 
   // Declaring Variables
 
