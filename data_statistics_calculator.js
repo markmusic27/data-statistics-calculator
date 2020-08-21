@@ -115,7 +115,3 @@ function statisticCall(array, solveFor) {
       break;
   }
 }
-
-console.log(
-  statisticCall([2, 2, 4, 4, 4, 5, 6, 6, 8, 9], 'standard deviation')
-);
