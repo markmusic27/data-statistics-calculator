@@ -2,7 +2,7 @@ const statisticCall = (array, solveFor) => {
   // Declaring Variables
 
   let sumOfArray = 0;
-  var arrayInOrder = array.sort();
+  let arrayInOrder = array.sort();
 
   // Declaring Variables
 
@@ -121,10 +121,3 @@ const statisticCall = (array, solveFor) => {
       break;
   }
 };
-
-console.log(
-  statisticCall(
-    [17, 41, 27, 77, 59, 10, 21, 66, 24, 55, 84, 12, 93, 70, 73],
-    'standard deviation'
-  )
-);
