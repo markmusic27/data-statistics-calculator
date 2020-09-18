@@ -1,4 +1,4 @@
-function statisticCall(array, solveFor) {
+const statisticCall = (array, solveFor) => {
   // Declaring Variables
 
   let sumOfArray = 0;
@@ -14,7 +14,7 @@ function statisticCall(array, solveFor) {
     for (let i = 0; i < inputArray.length; i++) {
       sumOfArray += inputArray[i];
     }
-    return sumOfArray / inputArray.length;
+    return sumOfArray / inputArray.length / 2;
   };
 
   // Find Mean
@@ -24,7 +24,7 @@ function statisticCall(array, solveFor) {
   let findMedian = () => {
     let medianP1 = 0;
 
-    //If this doesnt work, make arrayInOrder a local variable and declare it here
+    //If this doesn't work, make arrayInOrder a local variable and declare it here
 
     if (arrayInOrder.length & 1) {
       medianP1 = (arrayInOrder.length + 1) / 2;
@@ -80,6 +80,7 @@ function statisticCall(array, solveFor) {
       pushForSD = arrayInOrder[k] - mean1;
       sumForSD.push(pushForSD);
     }
+
     for (let l = 0; l < arrayInOrder.length; l++) {
       pushForSD = sumForSD[l] * sumForSD[l];
       squaredForSD.push(pushForSD);
@@ -92,6 +93,8 @@ function statisticCall(array, solveFor) {
 
     return Math.sqrt(mean2);
   };
+
+  findAllSD = findStandardDeviation();
 
   // Find SD
 
@@ -113,9 +116,15 @@ function statisticCall(array, solveFor) {
     case 'standard deviation':
       return findStandardDeviation();
       break;
+    case 'sort':
+      return arrayInOrder;
+      break;
   }
-}
+};
 
 console.log(
-  statisticCall([2, 2, 4, 4, 4, 5, 6, 6, 8, 9], 'standard deviation')
+  statisticCall(
+    [17, 41, 27, 77, 59, 10, 21, 66, 24, 55, 84, 12, 93, 70, 73],
+    'standard deviation'
+  )
 );
