@@ -14,17 +14,17 @@ class StatisticCall:
         self.numberList = numberList
         self.solveFor = solveFor
 
-    def findMean():
+    def findMean(self):
         print("work")
 
-    def findMedian():
+    def findMedian(self):
         print("work")
 
-    def findMode():
+    def findMode(self):
         print("work")
 
-    def findDataRange():
+    def findDataRange(self):
         print("work")
 
-    def findStandardDeviation():
+    def findStandardDeviation(self):
         print("work")
